@@ -1,0 +1,15 @@
+python3 test.py             \
+--dataroot ./data \
+--gpu_ids 0 \
+--name OTMorph  \
+--model OTMorph    \
+--which_model_net registUnet \
+--batchSize 1 \
+--input_nc 2 \
+--encoder_nc 16,32,32,32,32 \
+--decoder_nc 32,32,32,8,8,3 \
+--which_epoch 1 \
+--saveOpt 0 \
+--display_id 0 \
+--checkpoints_dir ./checkpoints/OTMorph/ \
+--results_dir ./results

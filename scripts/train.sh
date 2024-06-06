@@ -1,0 +1,25 @@
+python3 train.py             \
+--dataroot ./data \
+--gpu_ids 0 \
+--name OTMorph  \
+--model OTMorph    \
+--which_model_net registUnet \
+--init_type normal \
+--batchSize 1 \
+--lr 2e-4   \
+--lr_policy step \
+--lr_decay_iters 500 \
+--input_nc 2 \
+--encoder_nc 16,32,32,32,32 \
+--decoder_nc 32,32,32,8,8,3 \
+--loss_alpha 10.0 \
+--loss_lambda 2.0 \
+--OTsteps 100 \
+--niter 100 \
+--display_step 1  \
+--plot_step 1             \
+--save_epoch_img 1 \
+--save_epoch_freq 1        \
+--display_port 8097 \
+--display_id 0 \
+--checkpoints_dir ./checkpoints/OTMorph

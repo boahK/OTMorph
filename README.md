@@ -9,7 +9,7 @@ Official repository for "OTMorph: Unsupervised Multi-domain Abdominal Medical Im
 To test the proposed OTMorph, we may need Conda environment. You can download Anaconda from this [link](https://www.anaconda.com/download).
 Then, please run:
 ```
-conda env create –f OTMorph.yml
+conda env create -f OTMorph.yml
 ```
 
 ## Train
